@@ -14,8 +14,9 @@ const morgan = require('./config/morgan');
 
 app.use(morgan.errorHandler);
 app.use(morgan.successHandler);
+
 app.use(cors({
-  origin: 'http://localhost:3000',  // Allow only requests from this frontend URL
+  origin: ['http://localhost:3000', 'https://fleet-mgt.netlify.app'],  // List of allowed origins
 }));
 
 app.use(express.json());
