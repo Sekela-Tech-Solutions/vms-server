@@ -16,7 +16,7 @@ app.use(morgan.errorHandler);
 app.use(morgan.successHandler);
 
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://fleet-mgt.netlify.app'],  // List of allowed origins
+  origin: ['http://localhost:3000', 'https://fleetms.vercel.app'],  // List of allowed origins
 }));
 
 app.use(express.json());
